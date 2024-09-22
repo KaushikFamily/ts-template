@@ -1,25 +1,11 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "allowJs": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "resolveJsonModule": true,
-        "noImplicitReturns": true,
-        "esModuleInterop": true,
-        "target": "esnext",
-        "module": "commonjs",
-        "baseUrl": "src",
-        "paths": {
-            "@code/*": [
-                "day4/*"
-            ]
-        }
-    },
-    "include": [
-        "./src/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
